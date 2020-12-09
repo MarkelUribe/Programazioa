@@ -21,7 +21,9 @@ public class Langilea {
     public String getIzena() {
         return izena;
     }
-
+    public String getAbizena() {
+        return abizena;
+    }
     public String getIzenOsoa() {
         return izena + " " + abizena;
     }
@@ -33,7 +35,12 @@ public class Langilea {
     public double getUrtekoSoldata() {
         return soldata * 12;
     }
-
+    public int getZenbakitzailea(){
+        return lanaldia.getZenbakitzailea();
+    }
+    public int getIzendatzailea(){
+        return lanaldia.getIzendatzailea();
+    }
     public void setSoldata(double dirua) {
         soldata = dirua;
     }

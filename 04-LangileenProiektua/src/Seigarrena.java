@@ -15,10 +15,17 @@ public class Seigarrena {
         String izena = sc.nextLine();
 
         System.out.println(Langilea.bilatu(izena, a));
-
-        System.out.println("Zenbat nahi diozu soldata igo?");
-        int igo = sc.nextInt();
-
+        int igo=0;
+      
+            try{
+                System.out.println("Zenbat nahi diozu soldata igo?");
+                igo = sc.nextInt();
+                
+            }catch(Exception ex){
+                System.out.println("Balio okerra sartu duzu, igoera gabe geldituko zara");
+            }
+        
+        
         Langilea.bilatu(izena, a).soldataIgo(igo);
 
         System.out.println(Langilea.bilatu(izena, a));
